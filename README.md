@@ -11,4 +11,4 @@ npm install
 npm run dev
 ```
 
-To view an NFT, navigate to http://localhost:5173/<contract-address>/<token-id>, replacing <contract-address> and <token-id> with the address of the contract and the ID of the token you want to view. The application will fetch the data URI for the NFT and display it within an iframe.
+To view an NFT, navigate to `http://localhost:5173/<contract-address>/<token-id>`, replacing <contract-address> and <token-id> with the address of the NFT contract and the ID of the token you want to view. The application will fetch the data URI for the NFT and display it within an iframe.
