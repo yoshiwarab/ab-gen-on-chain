@@ -1,30 +1,5 @@
-# React + TypeScript + Vite
+# Art Blocks On-Chain Generator Demo
+This repository contains a demonstration application for the Art Blocks On-Chain Generator. This generator is a unique tool that assembles various on-chain resources, including project scripts, dependency scripts, and token data into a cohesive template. All of these components are stored on-chain. The generator leverages Scripty.sol to efficiently orchestrate the integration of these resources, producing the executable code needed to render an Art Blocks NFT in a web browser. The demo application retrieves the data URI of the NFT from a single contract call and injects it as the source of an iframe to display the token.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+To view an NFT, navigate to http://localhost:5173/<contract-address>/<token-id>, replacing <contract-address> and <token-id> with the address of the contract and the ID of the token you want to view. The application will fetch the data URI for the NFT and display it within an iframe.
